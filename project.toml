@@ -1,0 +1,15 @@
+[project]
+id = "tds-example"
+name = "TDS Example"
+version = "0.1.0"
+
+[build]
+builder = "gcr.io/buildpacks/builder"
+
+[[build.env]]
+name = "GOOGLE_FUNCTION_TARGET"
+value = "hello_world_get"
+
+[[build.env]]
+name = "GOOGLE_RUNTIME"
+value = "python312"
